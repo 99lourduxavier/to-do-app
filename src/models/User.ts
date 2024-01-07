@@ -1,6 +1,5 @@
 import { DataTypes, Model, Optional } from 'sequelize';
 import { sequelize } from './index';
-import Todo from './Todo';
 
 interface UserAttributes {
   id: number;

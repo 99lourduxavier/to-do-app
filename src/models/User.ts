@@ -1,6 +1,6 @@
-// src/models/User.ts
 import { DataTypes, Model, Optional } from 'sequelize';
 import { sequelize } from './index';
+import Todo from './Todo';
 
 interface UserAttributes {
   id: number;
@@ -44,4 +44,3 @@ User.init(
 );
 
 export default User;
-export { UserAttributes, UserCreationAttributes };

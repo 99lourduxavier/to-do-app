@@ -19,7 +19,10 @@ Make sure you have the following installed on your machine:
 
 ## Getting Started
 
-1. Export Zip file
+1. Clone the repository:
+
+   git clone hhttps://github.com/99lourduxavier/to-do-app.git
+   cd todo-app
 
 2. Install dependencies - npm install
 

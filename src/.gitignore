@@ -1,0 +1,29 @@
+# Node.js files
+node_modules/
+npm-debug.log
+yarn-error.log
+*.pnp
+.pnp.js
+
+# Build files
+dist/
+build/
+
+# VSCode settings
+.vscode/
+
+# Environment variables
+.env
+
+# TypeScript configuration
+tsconfig.tsbuildinfo
+
+# Dependency directories
+typings/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini

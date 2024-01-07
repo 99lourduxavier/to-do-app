@@ -5,6 +5,7 @@ interface TodoAttributes {
   id: number;
   title: string;
   description: string | null;
+  userId: number;
 }
 
 interface TodoCreationAttributes extends Optional<TodoAttributes, 'id'> {}
@@ -13,8 +14,9 @@ class Todo extends Model<TodoAttributes, TodoCreationAttributes> implements Todo
   public id!: number;
   public title!: string;
   public description!: string | null;
+  public userId!: number;
 
-  // associations
+  // Define associations
   public static associate(models: any): void {
     Todo.belongsTo(models.User, { foreignKey: 'userId' });
   }
@@ -35,6 +37,10 @@ Todo.init(
       type: DataTypes.TEXT,
       allowNull: true,
     },
+    userId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   },
   {
     sequelize,
@@ -43,4 +49,3 @@ Todo.init(
 );
 
 export default Todo;
-export { TodoAttributes, TodoCreationAttributes };
